@@ -1,4 +1,5 @@
 ---
+import descriptionImage from "../../public/images/description.png";
 interface Props {
   description: string;
   secondDescription: string;
@@ -17,7 +18,7 @@ const { description, secondDescription } = Astro.props;
     </article>
   </div>
   <div class="description__container--image">
-    <img src="../../public/images/description.png" />
+    <img src={descriptionImage.src} />
   </div>
 </section>
 
