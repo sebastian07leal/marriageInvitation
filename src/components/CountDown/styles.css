@@ -1,0 +1,41 @@
+
+.countdown-container  {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.countdown-container__card {
+  margin: 20px;
+  display: flex;
+  min-width: 15vw;
+  list-style: none;
+  min-height: 150px;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__time {
+  font-size: 90px;
+  font-family: "Jura", system-ui;
+}
+
+.card__label {
+  margin-top: 5px;
+  font-family: "Jura", system-ui;
+}
+
+@media screen and (max-width: 768px) {
+  .countdown-container__card {
+    min-width: 38vw;
+    margin: 0px;
+
+  }
+
+  .card__time {
+    font-size: 70px;
+  }
+}

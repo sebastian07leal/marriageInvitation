@@ -1,0 +1,113 @@
+---
+interface Props {
+  description: string;
+  secondDescription: string;
+}
+
+const { description, secondDescription } = Astro.props;
+---
+
+<section class="container-description">
+  <div class="description__container--text">
+    <article class="description__text--description">
+      <p>{description}</p>
+    </article>
+    <article class="description__text--second-description">
+      <p>{secondDescription}</p>
+    </article>
+  </div>
+  <div class="description__container--image">
+    <img src="../../public/images/description.png" />
+  </div>
+</section>
+
+<style>
+  .container-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    color: hsl(0, 0%, 91%);
+  }
+
+  .description__container--text {
+    max-width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .description__container--image {
+    max-width: 45vw;
+    overflow: hidden;
+    height: 450px;
+  }
+
+  .description__container--image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .description__text--description {
+    padding-right: 50px;
+  }
+
+  .description__text--description p {
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: justify;
+    font-family: "Jura", system-ui;
+  }
+
+  .description__text--second-description {
+    padding-right: 50px;
+  }
+
+  .description__text--second-description p {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: "Herr Von Muellerhoff", system-ui, cursive;
+  }
+
+  @media screen and (max-width: 768px) {
+    .description__container--text {
+      flex-wrap: nowrap;
+    }
+
+    .description__container--text {
+      height: 500px;
+      max-width: none;
+      position: absolute;
+      background: linear-gradient(45deg, hsl(0deg 7.66% 7.14%), transparent);
+    }
+
+    .description__text--description {
+      padding: 0px 40px;
+    }
+
+    .description__text--description p {
+      text-align: center;
+    }
+
+    .description__text--second-description {
+      padding: 0px 50px;
+    }
+
+    .description__text--second-description p {
+      font-size: 30px;
+    }
+
+    .description__container--image {
+      height: 500px;
+      max-width: none;
+      min-width: 100%;
+      margin-bottom: 500px;
+    }
+
+    .description__container--image img {
+      height: 500px;
+    }
+  }
+</style>

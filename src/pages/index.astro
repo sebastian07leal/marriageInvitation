@@ -1,6 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Presentation from "../components/Presentation.astro";
+import Description from "../components/Description.astro";
+import { CountDownPage } from "../components/CountDownPage";
 ---
 
 <Layout title="Nos casamos">
@@ -11,7 +13,13 @@ import Presentation from "../components/Presentation.astro";
       subTitle="Eclesiastés 3:11"
       footer="Y todo lo hizo hermoso a su tiempo"
     />
+    <CountDownPage
+      client:visible
+      weddingDate="march 16, 2024, 15:00:00 GMT-5:00"
+    />
+    <Description
+      description="CREEMOS EN UN DIOS QUE CUMPLE SUEÑOS, UN DIOS QUE SIEMPRE SUPERA NUESTRAS EXPECTATIVAS, DENTRO DE SUS PLANES ESTABA JUNTARNOS Y PREMIARNOS CON UN AMOR PARA TODA LA VIDA ."
+      secondDescription="¡Nos casamos y queremos que seas parte de nuestra felicidad¡"
+    />
   </main>
 </Layout>
-
-<style></style>

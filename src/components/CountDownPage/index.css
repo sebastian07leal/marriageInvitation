@@ -1,0 +1,35 @@
+.container {
+  color: azure;
+  margin-top: 150px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("/public/images/hands.png");
+}
+
+.date-event-title {
+  font-size: 30px;
+  font-family: "Cinzel", system-ui;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .date-event-title {
+    margin: 0px 30px;
+    font-size: 20px;
+    font-family: "Cinzel", system-ui;
+    text-transform: uppercase;
+  }
+
+  .container {
+    margin-top: 280px;
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+  }
+}
