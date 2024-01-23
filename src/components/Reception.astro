@@ -1,0 +1,138 @@
+---
+interface Props {
+  location: string;
+  locationName: string;
+  time: string;
+}
+
+const { location, locationName, time } = Astro.props;
+---
+
+<section class="description-container">
+  <div class="description__container--image">
+    <img src="/images/reception.png" alt="A husbands" />
+  </div>
+
+  <div class="description__container--description">
+    <p class="description__title">ceremonia y recepción</p>
+    <article class="description__container--elements">
+      <div class="container__element--card">
+        <p class="container__element--card--location">{locationName}</p>
+      </div>
+      <div class="container__element--card">
+        <div class="container__element--card--ring">
+          <img src="/icons/rings.png" alt="ring" />
+          <span>
+            <a href={location}>Cómo llegar</a>
+          </span>
+        </div>
+      </div>
+      <div class="container__element--card">
+        <p class="container__element--card--time">Hora de llegada {time}</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<style>
+  .description-container {
+    color: hsl(0, 0%, 91%);
+  }
+
+  .description__container--image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+  }
+
+  .description__container--image img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .description__container--elements {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .description__title {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+    text-transform: uppercase;
+    font-family: "Cinzel", system-ui;
+  }
+
+  .container__element--card {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container__element--card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .container__element--card--location {
+    font-family: "Cinzel", system-ui;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container__element--card--time {
+    font-family: "Cinzel", system-ui;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .container__element--card--ring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container__element--card--ring span {
+    color: hsl(0, 0%, 91%);
+    margin: 30px;
+    font-family: "Cinzel", system-ui;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+
+  .container__element--card--ring span a {
+    text-decoration: none;
+    color: hsl(0, 0%, 91%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .description__container--image {
+      display: none;
+    }
+
+    .description__title {
+      font-size: 25px;
+    }
+
+    .container__element--card--time {
+      font-size: 15px;
+    }
+
+    .container__element--card--location {
+      font-size: 15px;
+    }
+
+    .container__element--card--ring {
+      padding-top: 20px;
+    }
+  }
+</style>
