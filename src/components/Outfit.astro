@@ -1,0 +1,98 @@
+<section class="container-outfit">
+  <div class="container-outfit__icon-dress">
+    <img src="/icons/vestido.png" />
+  </div>
+  <div class="container-outfit__icon-suit">
+    <img src="/icons/traje.png" />
+  </div>
+  <div class="description-outfit">
+    <p class="description-outfit__title">Código de vestimenta</p>
+    <p class="description-outfit__paragraph">
+      "Opta por la vestimenta que te haga sentir más elegante, teniendo en
+      cuenta que el color blanco o beige se reserva exclusivamente para la
+      novia, mientras que el azul claro es la opción definida para el novio."
+    </p>
+  </div>
+</section>
+
+<style>
+  .container-outfit {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  .container-outfit__icon-dress {
+    left: 5vw;
+    z-index: 2;
+    bottom: 5px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .container-outfit__icon-dress img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .container-outfit__icon-suit {
+    z-index: 2;
+    right: 5vw;
+    bottom: 5px;
+    height: 200px;
+    position: absolute;
+  }
+
+  .container-outfit__icon-suit img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .description-outfit {
+    color: hsl(0, 0%, 91%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50vw;
+  }
+
+  .description-outfit__title {
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin: 0;
+    font-family: "Herr Von Muellerhoff", system-ui, cursive;
+  }
+
+  .description-outfit__paragraph {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Cinzel", system-ui;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container-outfit {
+      height: 700px;
+      margin-top: 30px;
+    }
+
+    .container-outfit__icon-dress {
+      left: 1px;
+      top: -20px;
+    }
+
+    .container-outfit__icon-suit {
+      right: 5px;
+    }
+
+    .description-outfit {
+      max-width: 80vw;
+    }
+
+    .description-outfit__title {
+      text-align: center;
+    }
+  }
+</style>
