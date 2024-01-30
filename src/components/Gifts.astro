@@ -1,0 +1,97 @@
+<section class="container-outfit">
+  <div class="container-outfit__gifts-one">
+    <img src="/images/gifts-two.jpeg" />
+  </div>
+  <div class="description-container">
+    <p class="description-container__title">Regalos</p>
+    <p class="description-container__text">
+      "Valoramos enormemente la presencia de cada uno de ustedes, ya que es lo
+      más importante para nosotros en este día tan especial. Si desean expresar
+      su cariño con un regalo, les agradeceríamos su contribución a través de
+      una lluvia de sobres."
+    </p>
+    <div class="description-container__icon">
+      <img src="/icons/envelopes.png" />
+    </div>
+  </div>
+  <div class="container-outfit__gifts-two">
+    <img src="/images/gifts-one.jpeg" />
+  </div>
+</section>
+
+<style>
+  .container-outfit {
+    height: 500px;
+    display: flex;
+  }
+
+  .container-outfit__gifts-one {
+    height: 500px;
+    width: 340px;
+  }
+
+  .container-outfit__gifts-one img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container-outfit__gifts-two {
+    height: 500px;
+    width: 340px;
+  }
+
+  .container-outfit__gifts-two img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 91%);
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .description-container__icon {
+    height: 80px;
+    width: 80px;
+  }
+
+  .description-container__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Amiri Quran", system-ui;
+  }
+
+  .description-container__icon img {
+    height: auto;
+    width: 100%;
+  }
+
+  .description-container__text {
+    font-size: 20px;
+    font-family: "Cinzel", system-ui;
+    text-align: center;
+    padding: 0 3vw;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container-outfit {
+      flex-wrap: wrap;
+    }
+
+    .container-outfit__gifts-one {
+      height: auto;
+      width: 100%;
+    }
+
+    .container-outfit__gifts-two {
+      height: auto;
+      width: 100%;
+    }
+  }
+</style>
