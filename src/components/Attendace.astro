@@ -1,0 +1,67 @@
+<section class="attendace-container">
+  <div class="background-image">
+    <img src="/images/handAndRing.png" />
+  </div>
+  <div class="wording-container">
+    <p class="wording-container__text">CONFIRMA TU ASISTENCIA</p>
+    <a href="/" class="wording-container__footer">Aquí</a>
+  </div>
+</section>
+
+<style>
+  .attendace-container {
+    height: 500px;
+    position: relative;
+    color: hsl(0, 0%, 91%);
+  }
+
+  .background-image {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  .background-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .wording-container {
+    z-index: 2;
+    height: 500px;
+    min-height: 100%;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(45deg, hsl(0deg 7.66% 7.14%), transparent);
+  }
+
+  .wording-container__text {
+    font-size: 60px;
+    font-family: "Amiri Quran", system-ui;
+  }
+
+  .wording-container__footer {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 91%);
+    font-family: "Cinzel", system-ui;
+    border: 1px solid hsl(0, 0%, 91%);
+  }
+
+  @media screen and (max-width: 768px) {
+    .attendace-container {
+      height: 300px;
+    }
+
+    .wording-container {
+      height: 300px;
+      padding-top: 50px;
+    }
+
+    .wording-container__text {
+      font-size: 30px;
+    }
+  }
+</style>
