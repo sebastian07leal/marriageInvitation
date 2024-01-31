@@ -1,0 +1,59 @@
+<section class="container-sorry-message">
+  <div class="container-sorry-message__item">
+    <p class="container-sorry-message__title">¡ No niños !</p>
+    <p class="container-sorry-message__description">
+      AUNQUE NOS GUSTA LOS NIÑOS, ESTA SERÁ UNA CELEBRACIÓN SOLO PARA ADULTOS.
+    </p>
+  </div>
+</section>
+
+<style>
+  .container-sorry-message {
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    color: hsl(0, 0%, 91%);
+    padding-top: 100px;
+  }
+
+  .container-sorry-message__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .container-sorry-message__title {
+    font-size: 100px;
+    margin: 0;
+    letter-spacing: 4px;
+    font-family: "Herr Von Muellerhoff", system-ui, cursive;
+  }
+
+  .container-sorry-message__description {
+    width: 60vw;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    font-family: "Cinzel", system-ui;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container-sorry-message {
+      min-height: 300px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 50px;
+    }
+
+    .container-sorry-message__title {
+      font-size: 60px;
+    }
+
+    .container-sorry-message__description {
+      width: 95vw;
+      font-size: 12px;
+      padding-top: 20px;
+    }
+  }
+</style>
