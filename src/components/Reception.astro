@@ -17,7 +17,7 @@ const { location, locationName, time } = Astro.props;
       </div>
       <div class="container__element--card">
         <div class="container__element--card--ring">
-          <img src="/icons/rings.png" alt="ring" />
+          <img src="/icons/rings.svg" alt="ring" />
           <span>
             <a href={location}>Cómo llegar</a>
           </span>
@@ -122,10 +122,7 @@ const { location, locationName, time } = Astro.props;
     cursor: pointer;
     text-transform: uppercase;
     border: 1px solid hsl(0, 0%, 91%);
-  }
-
-  .container__element--card--ring span:hover {
-    border: 2px solid hsl(0, 0%, 91%);
+    animation: palpite 2s infinite;
   }
 
   .container__element--card--ring span a {

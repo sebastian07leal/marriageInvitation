@@ -4,7 +4,13 @@
   </div>
   <div class="wording-container">
     <p class="wording-container__text">CONFIRMA TU ASISTENCIA</p>
-    <a href="/" class="wording-container__footer">Aquí</a>
+    <div>
+      <a
+        target="_blank"
+        href="https://forms.gle/vBgFpeprRsgQH7GG9"
+        class="wording-container__footer">Aquí</a
+      >
+    </div>
   </div>
 </section>
 
@@ -45,7 +51,10 @@
   .wording-container__footer {
     padding: 10px 20px;
     border-radius: 5px;
+    display: inline-block;
     color: hsl(0, 0%, 91%);
+    text-transform: uppercase;
+    animation: palpite 3s infinite;
     font-family: "Cinzel", system-ui;
     border: 1px solid hsl(0, 0%, 91%);
   }
@@ -57,7 +66,7 @@
 
     .wording-container {
       height: 300px;
-      padding-top: 50px;
+      padding-top: 20px;
     }
 
     .wording-container__text {
